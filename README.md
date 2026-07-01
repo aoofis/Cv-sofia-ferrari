@@ -1,2 +1,4 @@
 # Cv-sofia-ferrari
-Mi CV
+
+
+De Git y GitHub.

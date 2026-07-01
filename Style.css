@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#e9edf3;
+    padding:40px;
+}
+
+.cv{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+/* ---------- LADO IZQUIERDO ---------- */
+
+.sidebar{
+    width:35%;
+    background:#173a59;
+    color:white;
+    padding:35px 30px;
+}
+
+.foto{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.foto img{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+}
+
+.bloque{
+    margin-bottom:35px;
+}
+
+.bloque h2{
+    font-size:22px;
+    margin-bottom:18px;
+    border-bottom:2px solid rgba(255,255,255,.4);
+    padding-bottom:8px;
+}
+
+.bloque p{
+    margin:12px 0;
+    line-height:1.6;
+    font-size:16px;
+}
+
+.bloque ul{
+    list-style:none;
+}
+
+.habilidades li,
+.bloque ul li{
+    margin:14px 0;
+    font-size:17px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.habilidades i{
+    font-size:22px;
+    color:#7dd3fc;
+}
+
+/* ---------- LADO DERECHO ---------- */
+
+.contenido{
+    width:65%;
+    padding:45px;
+}
+
+header{
+    margin-bottom:35px;
+}
+
+header h1{
+    font-size:48px;
+    color:#173a59;
+}
+
+header h3{
+    color:#666;
+    font-weight:500;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+
+button{
+    background:#173a59;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#295b87;
+    transform:translateY(-2px);
+}
+
+#mensaje{
+    margin-top:18px;
+    color:#173a59;
+    font-weight:bold;
+}
+
+section{
+    margin-bottom:35px;
+}
+
+section h2{
+    color:#173a59;
+    margin-bottom:15px;
+    border-left:6px solid #173a59;
+    padding-left:12px;
+    font-size:26px;
+}
+
+section h4{
+    color:#444;
+    margin-bottom:10px;
+}
+
+section p{
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.otros{
+    margin-left:22px;
+}
+
+.otros li{
+    margin:10px 0;
+    color:#555;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+.cv{
+    flex-direction:column;
+}
+
+.sidebar,
+.contenido{
+    width:100%;
+}
+
+header h1{
+    font-size:38px;
+}
+
+.foto img{
+    width:160px;
+    height:160px;
+}
+
+}
